@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BODY FIT - Vianópolis</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="assets/js/tw-config.js"></script>
+<style>
+  .bg-pattern {
+    background-image: radial-gradient(theme('colors.outline-variant') 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+</style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-background border-b border-outline-variant">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-7xl mx-auto w-full max-md:px-margin-mobile">
+<a class="font-headline-md text-headline-md text-on-surface tracking-tighter hover:text-secondary transition-colors duration-200" href="index.html">BODY FIT</a>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors duration-200" href="modalidades.html">TREINOS</a>
+<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors duration-200" href="planos.html">PLANOS</a>
+<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors duration-200" href="unidades.html">UNIDADES</a>
+<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors duration-200" href="#sobre">SOBRE</a>
+</div>
+<a href="planos.html" class="bg-secondary-container hover:bg-secondary transition-colors duration-200 text-on-secondary-container font-headline-md text-[18px] uppercase px-6 py-2 rounded flex items-center gap-2">
+  SEJA ALUNO <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-[90vh] flex items-center overflow-hidden border-b border-outline-variant">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10"></div>
+<img alt="Interior moderno da academia" class="w-full h-full object-cover object-right opacity-60" src="assets/img/home-hero.jpg"/>
+</div>
+<div class="relative z-10 w-full max-w-7xl mx-auto px-margin-desktop max-md:px-margin-mobile flex flex-col items-start gap-md">
+<div class="inline-flex items-center gap-2 bg-surface-container-high border border-outline-variant px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface">4.7 GOOGLE RATING</span>
+</div>
+<div class="flex flex-col gap-xs">
+<h1 class="font-display-lg text-display-lg max-md:font-headline-lg-mobile max-md:text-headline-lg-mobile text-on-surface uppercase tracking-tight max-w-3xl leading-[0.9]">
+  22 ANOS DE <span class="text-secondary">HISTÓRIA PESADA</span>
+</h1>
+<p class="font-title-lg text-title-lg text-on-surface-variant uppercase tracking-wide">
+  A GENTE ENTENDE DE SUOR DESDE 2004
+</p>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mt-4">
+  Estrutura de elite para resultados reais. Esqueça o básico, treine no melhor clube esportivo de Vianópolis.
+</p>
+<div class="flex items-center gap-md mt-lg">
+<a href="planos.html" class="bg-secondary-container hover:bg-secondary transition-colors duration-200 text-on-secondary-container font-headline-md text-title-lg uppercase px-8 py-4 rounded-sm flex items-center gap-2">
+  SEJA ALUNO AGORA
+</a>
+</div>
+</div>
+</header>
+<!-- Modalities Bento Grid -->
+<section class="py-xl bg-surface-container-lowest bg-pattern">
+<div class="max-w-7xl mx-auto px-margin-desktop max-md:px-margin-mobile">
+<div class="flex flex-col items-center text-center gap-sm mb-lg">
+<h2 class="font-headline-lg text-headline-lg max-md:font-headline-lg-mobile max-md:text-headline-lg-mobile text-on-surface uppercase">
+  O QUE VOCÊ VAI <span class="text-secondary">TREINAR?</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+  Múltiplas modalidades. Uma única mensalidade.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-sm auto-rows-[250px]">
+<!-- Musculação (Large) -->
+<a href="modalidades.html" class="md:col-span-2 md:row-span-2 relative group overflow-hidden bg-surface-container-high border border-outline-variant rounded-sm cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-500 grayscale group-hover:grayscale-0" alt="Zona de musculação" src="assets/img/mod-musculacao.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-md w-full">
+<div class="flex justify-between items-end">
+<div>
+<span class="font-label-md text-label-md text-secondary block mb-xs">ZONA DE FORÇA</span>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase">MUSCULAÇÃO</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface text-[32px] group-hover:text-secondary transition-colors" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+</div>
+</div>
+</a>
+<!-- Cross Training -->
+<a href="modalidades.html" class="md:col-span-1 md:row-span-1 relative group overflow-hidden bg-surface-container-high border border-outline-variant rounded-sm cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-500 grayscale group-hover:grayscale-0" alt="Cross training" src="assets/img/mod-cross.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-sm w-full">
+<h3 class="font-title-lg text-title-lg text-on-surface uppercase mb-xs">CROSS TRAINING</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant line-clamp-1">Alta intensidade diária</p>
+</div>
+</a>
+<!-- Artes Marciais -->
+<a href="modalidades.html" class="md:col-span-1 md:row-span-1 relative group overflow-hidden bg-surface-container-high border border-outline-variant rounded-sm cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-500 grayscale group-hover:grayscale-0" alt="Artes marciais" src="assets/img/mod-artes.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-sm w-full">
+<h3 class="font-title-lg text-title-lg text-on-surface uppercase mb-xs">ARTES MARCIAIS</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant line-clamp-1">Disciplina e combate</p>
+</div>
+</a>
+<!-- Fit Dance -->
+<a href="modalidades.html" class="md:col-span-1 md:row-span-1 relative group overflow-hidden bg-surface-container-high border border-outline-variant rounded-sm cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-500 grayscale group-hover:grayscale-0" alt="Fit dance" src="assets/img/mod-fitdance.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-sm w-full">
+<h3 class="font-title-lg text-title-lg text-on-surface uppercase mb-xs">FIT DANCE</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant line-clamp-1">Ritmo e cardio</p>
+</div>
+</a>
+<!-- Quadras de Areia -->
+<a href="unidades.html" class="md:col-span-1 md:row-span-1 relative group overflow-hidden bg-secondary-container/10 border border-secondary/30 rounded-sm cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-500 mix-blend-luminosity" alt="Quadras de areia" src="assets/img/mod-quadras.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-sm w-full flex justify-between items-end">
+<div>
+<h3 class="font-title-lg text-title-lg text-secondary uppercase mb-xs">QUADRAS</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant line-clamp-1">Beach Tennis &amp; Futevôlei</p>
+</div>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">sports_volleyball</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer id="sobre" class="w-full py-lg bg-surface-container-lowest border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop gap-md max-w-7xl mx-auto w-full max-md:px-margin-mobile">
+<div class="font-headline-md text-headline-md text-on-surface">BODY FIT</div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors opacity-80 hover:opacity-100 uppercase" href="#">PRIVACY POLICY</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors opacity-80 hover:opacity-100 uppercase" href="#">TERMS OF SERVICE</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors opacity-80 hover:opacity-100 uppercase" href="#">CONTACT US</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors opacity-80 hover:opacity-100 uppercase" href="#">CAREERS</a>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant text-center md:text-right">
+  © 2024 BODY FIT. TODOS OS DIREITOS RESERVADOS.
+</div>
+</div>
+</footer>
+</body>
+</html>

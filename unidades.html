@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Quadras de Areia - BODY FIT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="assets/js/tw-config.js"></script>
+<style>
+  .cutout-effect { clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+  .bg-pattern {
+    background-image: radial-gradient(circle at 2px 2px, rgba(178, 197, 255, 0.1) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+</style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-background border-b border-outline-variant transition-all duration-300">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-[1200px] mx-auto w-full">
+<a class="font-headline-md text-headline-md text-on-surface tracking-tighter hover:text-secondary transition-colors duration-200" href="index.html">BODY FIT</a>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-secondary transition-colors duration-200 uppercase" href="modalidades.html">TREINOS</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-secondary transition-colors duration-200 uppercase" href="planos.html">PLANOS</a>
+<a class="text-secondary font-bold font-label-md text-label-md border-b-2 border-secondary pb-1 uppercase" href="unidades.html">UNIDADES</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-secondary transition-colors duration-200 uppercase" href="index.html#sobre">SOBRE</a>
+</div>
+<div class="flex items-center gap-sm">
+<a href="planos.html" class="bg-secondary text-white font-headline-md text-[20px] uppercase px-6 py-2 rounded transition-transform hover:bg-primary">SEJA ALUNO</a>
+</div>
+</div>
+</nav>
+<main class="w-full">
+<!-- Hero Section -->
+<section class="relative w-full min-h-[80vh] flex items-center justify-center overflow-hidden cutout-effect">
+<div class="absolute inset-0 z-0">
+<img alt="Beach Club" class="w-full h-full object-cover object-center opacity-40" src="assets/img/beach-hero.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop text-center mt-xl">
+<div class="inline-block bg-secondary text-white px-4 py-1 mb-md font-label-md text-label-md uppercase tracking-widest rounded-sm border border-secondary">Beach Tennis &amp; Vôlei</div>
+<h1 class="font-display-lg text-display-lg text-on-surface uppercase mb-sm tracking-tight drop-shadow-lg">Pé na Areia, <br/><span class="text-secondary">Energia no Alto</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-lg">Viva a experiência do mais autêntico Beach Club no coração da cidade. Estrutura premium para alta performance, do nascer ao pôr do sol.</p>
+<a class="inline-flex items-center gap-2 bg-secondary text-white font-headline-md text-[24px] uppercase px-xl py-4 rounded-sm hover:bg-primary transition-colors border-2 border-secondary hover:border-primary group" href="planos.html">
+  Agende sua Quadra
+  <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Infra Section -->
+<section class="py-xl max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop relative">
+<div class="absolute inset-0 bg-pattern opacity-50 pointer-events-none"></div>
+<div class="relative z-10">
+<div class="mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase mb-xs">A Melhor Arena</h2>
+<div class="w-24 h-1 bg-secondary mb-md"></div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Nossas quadras foram desenhadas para atletas exigentes. Areia tratada, iluminação de estádio e ambiente projetado para foco total no jogo.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="bg-[#1A1A1E] border border-[#2D2D33] p-lg flex flex-col justify-between group hover:border-secondary transition-colors h-full">
+<div>
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center mb-md border border-secondary/30 text-secondary group-hover:bg-secondary group-hover:text-white transition-colors"><span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">wb_sunny</span></div>
+<h3 class="font-title-lg text-title-lg text-on-surface uppercase mb-sm">Areia Padrão FIVB</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Sistema de drenagem de alta performance e areia branca tratada termicamente, garantindo segurança e menos impacto para as articulações.</p>
+</div>
+</div>
+<div class="bg-[#1A1A1E] border border-[#2D2D33] p-lg flex flex-col justify-between group hover:border-secondary transition-colors h-full">
+<div>
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center mb-md border border-secondary/30 text-secondary group-hover:bg-secondary group-hover:text-white transition-colors"><span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">lightbulb</span></div>
+<h3 class="font-title-lg text-title-lg text-on-surface uppercase mb-sm">Iluminação Pro</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Refletores LED de 1200w distribuídos estrategicamente para eliminar sombras, permitindo jogos noturnos com visibilidade perfeita de dia.</p>
+</div>
+</div>
+<div class="bg-secondary border border-secondary p-lg flex flex-col justify-between group relative overflow-hidden h-full">
+<div class="relative z-10 text-white">
+<div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mb-md border border-white/50 text-white"><span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">groups</span></div>
+<h3 class="font-title-lg text-title-lg text-white uppercase mb-sm">Clínicas e Aulas</h3>
+<p class="font-body-md text-body-md text-white/90">Aprenda com os melhores. Oferecemos clínicas de Beach Tennis e Vôlei de Praia com ex-atletas profissionais para todos os níveis.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pro Shop Section -->
+<section class="border-t border-[#2D2D33] bg-[#0A0A0B] py-xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row items-center gap-xl">
+<div class="w-full md:w-1/2">
+<div class="relative aspect-square md:aspect-[4/3] border border-[#2D2D33] overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('assets/img/proshop.jpg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0B] to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full">
+<div class="flex gap-2 mb-sm">
+<span class="bg-primary text-on-primary text-[10px] uppercase font-bold px-2 py-1 tracking-wider">Locação</span>
+<span class="bg-secondary text-white text-[10px] uppercase font-bold px-2 py-1 tracking-wider">Venda</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white uppercase leading-none">Equipamento <br/>de Elite</h3>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase mb-sm">Pro Shop</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">Esqueceu a raquete? Quer testar o último lançamento em carbono? Nosso Pro Shop oferece aluguel de equipamentos de primeira linha e venda dos melhores acessórios do mercado.</p>
+<div class="space-y-4 mb-lg">
+<div class="flex items-center gap-md border-b border-[#2D2D33] pb-4">
+<span class="material-symbols-outlined text-secondary text-[32px]" style="font-variation-settings: 'FILL' 1;">sports_tennis</span>
+<div><h4 class="font-label-md text-label-md text-on-surface uppercase">Raquetes de Carbono</h4><p class="text-[12px] text-on-surface-variant font-mono">MODELOS 2024 DISPONÍVEIS</p></div>
+</div>
+<div class="flex items-center gap-md border-b border-[#2D2D33] pb-4">
+<span class="material-symbols-outlined text-secondary text-[32px]" style="font-variation-settings: 'FILL' 1;">sports_volleyball</span>
+<div><h4 class="font-label-md text-label-md text-on-surface uppercase">Bolas Oficiais</h4><p class="text-[12px] text-on-surface-variant font-mono">MIKASA VLS300 &amp; NOX PRO</p></div>
+</div>
+</div>
+<a class="text-secondary font-label-md text-label-md uppercase tracking-wider hover:text-primary transition-colors flex items-center gap-2" href="planos.html">Ver catálogo completo <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-lg border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop gap-md max-w-[1200px] mx-auto w-full">
+<div class="font-headline-md text-headline-md text-on-surface uppercase tracking-tighter opacity-80 hover:opacity-100 transition-opacity">BODY FIT</div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="text-on-surface-variant font-label-md text-label-md uppercase hover:text-on-surface transition-colors" href="#">PRIVACY POLICY</a>
+<a class="text-on-surface-variant font-label-md text-label-md uppercase hover:text-on-surface transition-colors" href="#">TERMS OF SERVICE</a>
+<a class="text-on-surface-variant font-label-md text-label-md uppercase hover:text-on-surface transition-colors" href="#">CONTACT US</a>
+<a class="text-on-surface-variant font-label-md text-label-md uppercase hover:text-on-surface transition-colors" href="#">CAREERS</a>
+</div>
+<div class="text-secondary font-body-md text-body-md uppercase text-[12px] opacity-80">© 2024 BODY FIT. TODOS OS DIREITOS RESERVADOS.</div>
+</div>
+</footer>
+</body>
+</html>
