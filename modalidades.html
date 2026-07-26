@@ -2,138 +2,191 @@
 <html class="dark" lang="pt-BR">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Modalidades - BODY FIT</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="assets/js/tw-config.js"></script>
-<style>
-  .active-tab { border-left-width: 4px; border-color: #b2c5ff; background-color: #1a1a1e; }
-  .custom-slate { background-color: #1a1a1e; }
-  .custom-border { border-color: #2d2d33; }
-  .scrollbar-hide::-webkit-scrollbar { display: none; }
-  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-</style>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Modalidades — BODY FIT Vianópolis</title>
+<meta name="description" content="Cross training, musculação, artes marciais, fit dance e yoga na BODY FIT. Veja horários, benefícios e agende sua aula experimental gratuita."/>
+<meta name="theme-color" content="#131314"/>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"/>
+
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="pt_BR"/>
+<meta property="og:site_name" content="BODY FIT"/>
+<meta property="og:title" content="Modalidades — BODY FIT Vianópolis"/>
+<meta property="og:description" content="Cross training, musculação, artes marciais, fit dance e yoga. Uma mensalidade, todas as modalidades."/>
+<meta property="og:image" content="assets/img/cross-hero.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"/>
+<link rel="stylesheet" href="assets/css/app.css"/>
 </head>
-<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased">
-<!-- TopNavBar -->
-<nav class="sticky top-0 w-full bg-background border-b border-outline-variant z-50">
-<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-7xl mx-auto w-full">
-<a class="font-headline-md text-headline-md text-on-surface tracking-tighter hover:text-secondary transition-colors" href="index.html">BODY FIT</a>
-<div class="hidden md:flex gap-md items-center">
-<a class="text-secondary font-bold border-b-2 border-secondary pb-1" href="modalidades.html">TREINOS</a>
-<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors duration-200" href="planos.html">PLANOS</a>
-<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors duration-200" href="unidades.html">UNIDADES</a>
-<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors duration-200" href="index.html#sobre">SOBRE</a>
-</div>
-<a href="planos.html" class="bg-secondary-container hover:bg-secondary text-on-secondary-container font-headline-md text-[18px] uppercase px-md py-sm rounded hidden md:block transition-colors">SEJA ALUNO</a>
-<button class="md:hidden text-on-surface"><span class="material-symbols-outlined">menu</span></button>
-</div>
+<body class="flex min-h-screen flex-col selection:bg-secondary selection:text-on-secondary">
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ===== Navegação ===================================================== -->
+<nav class="sticky top-0 z-50 w-full border-b border-outline-variant bg-background" aria-label="Principal">
+  <div class="mx-auto flex w-full max-w-7xl items-center justify-between px-margin-mobile py-4 md:px-margin-desktop">
+    <a class="font-headline-md text-headline-md tracking-tighter text-on-surface transition-colors hover:text-secondary" href="index.html" translate="no">BODY&nbsp;FIT</a>
+
+    <div class="hidden items-center gap-lg md:flex">
+      <a class="border-b-2 border-secondary pb-1 font-label-md text-label-md uppercase text-secondary" href="modalidades.html" aria-current="page">Treinos</a>
+      <a class="font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:text-secondary" href="planos.html">Planos</a>
+      <a class="font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:text-secondary" href="unidades.html">Quadras</a>
+      <a class="font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:text-secondary" href="index.html#contato">Contato</a>
+    </div>
+
+    <div class="flex items-center gap-sm">
+      <a href="planos.html" class="btn-primary hidden text-[18px] md:inline-flex">Seja aluno</a>
+      <button type="button" data-drawer-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu" class="p-2 text-on-surface md:hidden">
+        <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+      </button>
+    </div>
+  </div>
 </nav>
-<!-- Main Content -->
-<main class="flex-grow flex flex-col md:flex-row max-w-7xl mx-auto w-full pt-lg pb-xl px-margin-mobile md:px-margin-desktop gap-gutter">
-<!-- Sidebar -->
-<aside class="w-full md:w-64 flex-shrink-0">
-<h2 class="font-headline-md text-headline-md text-on-surface mb-md">MODALIDADES</h2>
-<div class="flex overflow-x-auto md:flex-col gap-xs pb-sm md:pb-0 scrollbar-hide">
-<button data-mod="cross" class="mod-tab active-tab text-left px-4 py-3 rounded-r-sm transition-colors text-secondary font-bold whitespace-nowrap md:whitespace-normal">CROSS TRAINING</button>
-<button data-mod="musculacao" class="mod-tab text-left px-4 py-3 rounded-r-sm transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high whitespace-nowrap md:whitespace-normal font-label-md">MUSCULAÇÃO</button>
-<button data-mod="artes" class="mod-tab text-left px-4 py-3 rounded-r-sm transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high whitespace-nowrap md:whitespace-normal font-label-md">ARTES MARCIAIS</button>
-<button data-mod="fitdance" class="mod-tab text-left px-4 py-3 rounded-r-sm transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high whitespace-nowrap md:whitespace-normal font-label-md">FIT DANCE</button>
-<button data-mod="yoga" class="mod-tab text-left px-4 py-3 rounded-r-sm transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high whitespace-nowrap md:whitespace-normal font-label-md">YOGA</button>
+
+<!-- Menu mobile -->
+<div id="menu-mobile" hidden class="fixed inset-0 z-[90] md:hidden">
+  <div data-drawer-overlay class="absolute inset-0 animate-fade-in bg-black/70"></div>
+  <div data-drawer-panel role="dialog" aria-modal="true" aria-label="Menu"
+       class="absolute right-0 top-0 flex h-full w-[min(20rem,85vw)] animate-drawer-in flex-col overflow-y-auto overscroll-contain border-l border-outline-variant bg-surface-container-lowest">
+    <div class="flex items-center justify-between border-b border-outline-variant px-margin-mobile py-4">
+      <span class="font-headline-md text-headline-md tracking-tighter text-on-surface" translate="no">BODY&nbsp;FIT</span>
+      <button type="button" data-drawer-close aria-label="Fechar menu" class="p-2 text-on-surface">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
+    </div>
+    <div class="flex flex-col px-margin-mobile py-md">
+      <a class="border-b border-hairline py-md font-headline-md text-headline-md uppercase text-secondary" href="modalidades.html" aria-current="page">Treinos</a>
+      <a class="border-b border-hairline py-md font-headline-md text-headline-md uppercase text-on-surface transition-colors hover:text-secondary" href="planos.html">Planos</a>
+      <a class="border-b border-hairline py-md font-headline-md text-headline-md uppercase text-on-surface transition-colors hover:text-secondary" href="unidades.html">Quadras</a>
+      <a class="border-b border-hairline py-md font-headline-md text-headline-md uppercase text-on-surface transition-colors hover:text-secondary" href="index.html#contato">Contato</a>
+    </div>
+    <div class="mt-auto p-margin-mobile">
+      <a href="planos.html" class="btn-primary w-full text-[20px]">Seja aluno</a>
+    </div>
+  </div>
 </div>
-</aside>
-<!-- Content Area -->
-<div class="flex-grow flex flex-col gap-lg">
-<div class="relative w-full h-[400px] md:h-[500px] custom-slate border custom-border overflow-hidden">
-<img class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-luminosity" alt="Sessão de cross training" src="assets/img/cross-hero.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
-<div class="absolute bottom-0 left-0 p-lg w-full">
-<div id="mod-badge" class="inline-block bg-secondary-container text-white px-3 py-1 font-label-md uppercase mb-sm">ALTA INTENSIDADE</div>
-<h1 id="mod-title" class="font-display-lg text-display-lg text-on-surface uppercase m-0 leading-none">CROSS TRAINING</h1>
-</div>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
-<div class="lg:col-span-2 custom-slate p-lg border custom-border">
-<h3 class="font-headline-md text-headline-md text-on-surface mb-md">O QUE É?</h3>
-<p id="mod-desc1" class="text-on-surface-variant font-body-lg text-body-lg mb-md">
-  O Cross Training na BODY FIT não é apenas um treino; é uma forja de resiliência. Combinamos levantamento de peso olímpico, ginástica e condicionamento metabólico em sessões de alta intensidade que desafiam seus limites físicos e mentais.
-</p>
-<p id="mod-desc2" class="text-on-surface-variant font-body-md text-body-md">
-  Preparamos você para o inesperado. Cada WOD (Workout of the Day) é estruturado para maximizar resultados, construir força funcional e queimar gordura de forma eficiente, tudo dentro de um ambiente de comunidade e alta performance.
-</p>
-</div>
-<div class="custom-slate p-lg border custom-border flex flex-col justify-between">
-<div>
-<h4 class="font-title-lg text-title-lg text-on-surface mb-sm uppercase">Benefícios</h4>
-<ul class="space-y-sm text-on-surface-variant font-body-md">
-<li class="flex items-start gap-sm"><span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span> Condicionamento Extremo</li>
-<li class="flex items-start gap-sm"><span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span> Força Funcional</li>
-<li class="flex items-start gap-sm"><span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span> Queima Calórica Acelerada</li>
-<li class="flex items-start gap-sm"><span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span> Comunidade Forte</li>
-</ul>
-</div>
-<a href="planos.html" class="mt-lg w-full bg-secondary-container text-white font-headline-md text-[20px] uppercase py-sm rounded hover:bg-secondary transition-colors text-center">AGENDAR AULA EXPERIMENTAL</a>
-</div>
-</div>
-<div class="custom-slate border custom-border p-md md:p-lg">
-<h3 class="font-headline-md text-headline-md text-on-surface mb-md">HORÁRIOS PRINCIPAIS</h3>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-md">
-<div class="bg-surface-container-high p-sm text-center border custom-border"><div class="text-secondary font-headline-md">06:00</div><div class="text-on-surface-variant font-label-md uppercase">Seg - Sex</div></div>
-<div class="bg-surface-container-high p-sm text-center border custom-border"><div class="text-secondary font-headline-md">12:00</div><div class="text-on-surface-variant font-label-md uppercase">Seg - Sex</div></div>
-<div class="bg-surface-container-high p-sm text-center border custom-border"><div class="text-secondary font-headline-md">18:30</div><div class="text-on-surface-variant font-label-md uppercase">Seg - Sex</div></div>
-<div class="bg-surface-container-high p-sm text-center border custom-border"><div class="text-secondary font-headline-md">10:00</div><div class="text-on-surface-variant font-label-md uppercase">Sábados</div></div>
-</div>
-</div>
-</div>
+
+<!-- ===== Conteúdo ====================================================== -->
+<main id="conteudo" class="mx-auto flex w-full max-w-7xl flex-grow flex-col gap-gutter px-margin-mobile pb-xl pt-lg md:flex-row md:px-margin-desktop">
+
+  <!-- Seletor de modalidade -->
+  <aside class="w-full flex-shrink-0 md:w-64">
+    <h1 class="mb-md font-headline-md text-headline-md uppercase text-on-surface">Modalidades</h1>
+    <div role="tablist" data-modalidades aria-label="Escolha uma modalidade" aria-orientation="vertical"
+         class="scrollbar-hide flex gap-xs overflow-x-auto pb-sm md:flex-col md:pb-0">
+      <button type="button" role="tab" data-mod="cross" id="tab-cross" aria-controls="painel-modalidade" aria-selected="true" tabindex="0"
+              class="whitespace-nowrap border-l-4 border-secondary bg-slate px-4 py-3 text-left font-label-md text-label-md uppercase text-secondary transition-colors md:whitespace-normal">Cross Training</button>
+      <button type="button" role="tab" data-mod="musculacao" id="tab-musculacao" aria-controls="painel-modalidade" aria-selected="false" tabindex="-1"
+              class="whitespace-nowrap border-l-4 border-transparent px-4 py-3 text-left font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:bg-surface-container-high hover:text-on-surface md:whitespace-normal">Musculação</button>
+      <button type="button" role="tab" data-mod="artes" id="tab-artes" aria-controls="painel-modalidade" aria-selected="false" tabindex="-1"
+              class="whitespace-nowrap border-l-4 border-transparent px-4 py-3 text-left font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:bg-surface-container-high hover:text-on-surface md:whitespace-normal">Artes Marciais</button>
+      <button type="button" role="tab" data-mod="fitdance" id="tab-fitdance" aria-controls="painel-modalidade" aria-selected="false" tabindex="-1"
+              class="whitespace-nowrap border-l-4 border-transparent px-4 py-3 text-left font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:bg-surface-container-high hover:text-on-surface md:whitespace-normal">Fit Dance</button>
+      <button type="button" role="tab" data-mod="yoga" id="tab-yoga" aria-controls="painel-modalidade" aria-selected="false" tabindex="-1"
+              class="whitespace-nowrap border-l-4 border-transparent px-4 py-3 text-left font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:bg-surface-container-high hover:text-on-surface md:whitespace-normal">Yoga</button>
+    </div>
+
+    <p class="mt-md hidden border border-hairline bg-slate p-sm font-body-md text-[14px] text-on-surface-variant md:block">
+      Todas as modalidades estão inclusas na mesma mensalidade.
+    </p>
+  </aside>
+
+  <!-- Painel da modalidade -->
+  <div id="painel-modalidade" role="tabpanel" aria-labelledby="tab-cross" class="flex flex-grow flex-col gap-lg">
+
+    <div class="relative h-[400px] w-full overflow-hidden border border-hairline bg-slate md:h-[500px]">
+      <img id="mod-imagem" src="assets/img/cross-hero.webp" alt="Treino de cross training na BODY FIT"
+           width="512" height="286" fetchpriority="high" decoding="async"
+           class="absolute inset-0 h-full w-full object-cover opacity-80 mix-blend-luminosity"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
+      <div class="absolute bottom-0 left-0 w-full p-md md:p-lg">
+        <p id="mod-tag" class="mb-sm inline-block bg-secondary-container px-3 py-1 font-label-md text-label-md uppercase text-white">Alta intensidade</p>
+        <h2 id="mod-titulo" class="m-0 font-display-lg text-display-lg uppercase leading-none text-on-surface max-md:text-headline-lg-mobile">Cross Training</h2>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-gutter lg:grid-cols-3">
+      <div class="border border-hairline bg-slate p-md md:p-lg lg:col-span-2">
+        <h3 class="mb-md font-headline-md text-headline-md uppercase text-on-surface">O que é?</h3>
+        <p id="mod-resumo" class="mb-md font-body-lg text-body-lg text-on-surface-variant">
+          Levantamento olímpico, ginástica e condicionamento metabólico na mesma sessão. Cada treino do dia é montado para você sair melhor do que entrou — não apenas mais cansado.
+        </p>
+        <p id="mod-detalhe" class="font-body-md text-body-md text-on-surface-variant">
+          As turmas são pequenas e o professor corrige movimento a movimento. Você aprende a técnica antes de aumentar a carga, então dá para começar do zero sem se machucar.
+        </p>
+      </div>
+
+      <div class="flex flex-col justify-between border border-hairline bg-slate p-md md:p-lg">
+        <div>
+          <h3 class="mb-sm font-title-lg text-title-lg uppercase text-on-surface">Benefícios</h3>
+          <ul id="mod-beneficios" class="space-y-sm font-body-md text-body-md text-on-surface-variant">
+            <li class="flex items-start gap-sm"><span class="material-symbols-outlined shrink-0 text-[20px] text-secondary" aria-hidden="true" style="font-variation-settings:'FILL' 1">check_circle</span>Condicionamento extremo</li>
+            <li class="flex items-start gap-sm"><span class="material-symbols-outlined shrink-0 text-[20px] text-secondary" aria-hidden="true" style="font-variation-settings:'FILL' 1">check_circle</span>Força funcional</li>
+            <li class="flex items-start gap-sm"><span class="material-symbols-outlined shrink-0 text-[20px] text-secondary" aria-hidden="true" style="font-variation-settings:'FILL' 1">check_circle</span>Queima calórica acelerada</li>
+            <li class="flex items-start gap-sm"><span class="material-symbols-outlined shrink-0 text-[20px] text-secondary" aria-hidden="true" style="font-variation-settings:'FILL' 1">check_circle</span>Turma que puxa junto</li>
+          </ul>
+        </div>
+        <a href="index.html#contato" class="btn-primary mt-lg w-full text-[20px]">Agendar aula grátis</a>
+      </div>
+    </div>
+
+    <div class="border border-hairline bg-slate p-md md:p-lg">
+      <h3 class="mb-md font-headline-md text-headline-md uppercase text-on-surface">Horários</h3>
+      <div id="mod-horarios" class="grid grid-cols-2 gap-md md:grid-cols-4">
+        <div class="border border-hairline bg-surface-container-high px-sm py-md text-center">
+          <span class="spec-value text-secondary">06:00</span>
+          <span class="spec-label mt-xs">Seg a Sex</span>
+        </div>
+        <div class="border border-hairline bg-surface-container-high px-sm py-md text-center">
+          <span class="spec-value text-secondary">12:00</span>
+          <span class="spec-label mt-xs">Seg a Sex</span>
+        </div>
+        <div class="border border-hairline bg-surface-container-high px-sm py-md text-center">
+          <span class="spec-value text-secondary">18:30</span>
+          <span class="spec-label mt-xs">Seg a Sex</span>
+        </div>
+        <div class="border border-hairline bg-surface-container-high px-sm py-md text-center">
+          <span class="spec-value text-secondary">10:00</span>
+          <span class="spec-label mt-xs">Sábado</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
-<!-- Footer -->
-<footer class="w-full py-lg bg-surface-container-lowest border-t border-outline-variant mt-auto">
-<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop gap-md max-w-7xl mx-auto w-full">
-<div class="font-headline-md text-headline-md text-on-surface">BODY FIT</div>
-<div class="flex flex-wrap justify-center gap-md">
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors opacity-80 hover:opacity-100" href="#">PRIVACY POLICY</a>
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors opacity-80 hover:opacity-100" href="#">TERMS OF SERVICE</a>
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors opacity-80 hover:opacity-100" href="#">CONTACT US</a>
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors opacity-80 hover:opacity-100" href="#">CAREERS</a>
-</div>
-<div class="text-on-surface-variant font-body-md text-body-md opacity-80">© 2024 BODY FIT. TODOS OS DIREITOS RESERVADOS.</div>
-</div>
+
+<!-- ===== Rodapé ======================================================== -->
+<footer class="mt-auto border-t border-outline-variant bg-surface-container-lowest py-lg">
+  <div class="mx-auto w-full max-w-7xl px-margin-mobile md:px-margin-desktop">
+    <div class="flex flex-col gap-lg md:flex-row md:justify-between">
+      <div>
+        <p class="font-headline-md text-headline-md text-on-surface" translate="no">BODY&nbsp;FIT</p>
+        <p class="mt-xs max-w-xs font-body-md text-body-md text-on-surface-variant">Clube esportivo em Vianópolis desde 2004.</p>
+      </div>
+      <nav class="flex flex-wrap gap-x-lg gap-y-sm" aria-label="Rodapé">
+        <a class="font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:text-on-surface" href="modalidades.html">Treinos</a>
+        <a class="font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:text-on-surface" href="planos.html">Planos</a>
+        <a class="font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:text-on-surface" href="unidades.html">Quadras</a>
+        <a class="font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:text-on-surface" href="index.html#contato">Contato</a>
+      </nav>
+    </div>
+    <div class="mt-lg flex flex-col gap-sm border-t border-hairline pt-md md:flex-row md:items-center md:justify-between">
+      <p class="font-data text-data-xs uppercase text-on-surface-variant">© <span data-ano>2026</span> BODY FIT · Todos os direitos reservados</p>
+      <p class="font-data text-data-xs uppercase text-on-surface-variant">Seg a Sex 05:30–22:00 · Sáb 08:00–14:00</p>
+    </div>
+  </div>
 </footer>
-<script>
-  // Troca conteúdo da modalidade ao clicar na sidebar
-  const DATA = {
-    cross: { title: "CROSS TRAINING", badge: "ALTA INTENSIDADE",
-      d1: "O Cross Training na BODY FIT não é apenas um treino; é uma forja de resiliência. Combinamos levantamento de peso olímpico, ginástica e condicionamento metabólico em sessões de alta intensidade que desafiam seus limites físicos e mentais.",
-      d2: "Preparamos você para o inesperado. Cada WOD (Workout of the Day) é estruturado para maximizar resultados, construir força funcional e queimar gordura de forma eficiente, tudo dentro de um ambiente de comunidade e alta performance." },
-    musculacao: { title: "MUSCULAÇÃO", badge: "ZONA DE FORÇA",
-      d1: "A maior área de musculação de Vianópolis. Equipamentos de ponta, pesos livres e máquinas para todos os grupos musculares, com espaço de sobra para treinar do jeito certo.",
-      d2: "Do iniciante ao avançado: acompanhamento de professores em quadra, fichas personalizadas e ambiente pensado para você bater recorde a cada treino." },
-    artes: { title: "ARTES MARCIAIS", badge: "DISCIPLINA & COMBATE",
-      d1: "Muay Thai, Jiu-Jitsu e Boxe em uma estrutura de tatame profissional. Técnica, condicionamento e defesa pessoal com instrutores graduados.",
-      d2: "Turmas para todos os níveis e idades. Desenvolva disciplina, explosão e confiança em um ambiente de respeito e alta performance." },
-    fitdance: { title: "FIT DANCE", badge: "RITMO & CARDIO",
-      d1: "Queime calorias dançando. Coreografias energéticas ao som das músicas do momento, em uma sala ampla com espelhos e som de qualidade.",
-      d2: "Cardio que não parece treino. Aulas dinâmicas que melhoram coordenação, resistência e humor — do começo ao fim." },
-    yoga: { title: "YOGA", badge: "EQUILÍBRIO & FOCO",
-      d1: "Um respiro no meio da rotina. Práticas de yoga que unem força, flexibilidade e consciência corporal em um ambiente tranquilo.",
-      d2: "Reduza o estresse, melhore a postura e a mobilidade. Aulas para todos os níveis, com foco em respiração e equilíbrio." }
-  };
-  const tabs = document.querySelectorAll('.mod-tab');
-  tabs.forEach(tab => tab.addEventListener('click', () => {
-    tabs.forEach(t => {
-      t.classList.remove('active-tab', 'text-secondary', 'font-bold');
-      t.classList.add('text-on-surface-variant', 'font-label-md');
-    });
-    tab.classList.add('active-tab', 'text-secondary', 'font-bold');
-    tab.classList.remove('text-on-surface-variant', 'font-label-md');
-    const d = DATA[tab.dataset.mod];
-    document.getElementById('mod-title').textContent = d.title;
-    document.getElementById('mod-badge').textContent = d.badge;
-    document.getElementById('mod-desc1').textContent = d.d1;
-    document.getElementById('mod-desc2').textContent = d.d2;
-  }));
-</script>
+
+<a href="https://wa.me/5562999002616?text=Oi!%20Quero%20agendar%20uma%20aula%20experimental%20na%20BODY%20FIT."
+   target="_blank" rel="noopener noreferrer" aria-label="Falar com a BODY FIT no WhatsApp"
+   class="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full border border-secondary bg-secondary-container text-white transition-colors hover:bg-[#0052d6]"
+   style="bottom: max(1.5rem, env(safe-area-inset-bottom)); right: max(1.5rem, env(safe-area-inset-right))">
+  <span class="material-symbols-outlined text-[28px]" aria-hidden="true" style="font-variation-settings:'FILL' 1">chat</span>
+</a>
+
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>

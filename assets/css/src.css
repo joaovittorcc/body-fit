@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-background text-on-background font-body-md antialiased;
+  }
+
+  /* Âncoras não ficam escondidas atrás da nav fixa */
+  [id] {
+    scroll-margin-top: 6rem;
+  }
+
+  /* Foco visível em tudo que é operável por teclado */
+  a:focus-visible,
+  button:focus-visible,
+  [tabindex]:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    @apply outline-none ring-2 ring-secondary ring-offset-2 ring-offset-background rounded-sm;
+  }
+
+  a,
+  button,
+  [role="tab"] {
+    touch-action: manipulation;
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Link de pular para o conteúdo — só aparece no foco por teclado */
+  .skip-link {
+    @apply absolute left-4 top-4 z-[100] -translate-y-24 bg-secondary-container px-4 py-2
+           font-label-md text-label-md uppercase text-white transition-transform
+           focus-visible:translate-y-0;
+  }
+
+  /* ---- Sistema de dados: o "log de treino" do site ----------------------
+     Todo número do site (anos, horários, preços, specs) usa este registro:
+     rótulo micro em caixa alta + valor monoespaçado com dígitos alinhados. */
+  .spec-label {
+    @apply block font-data text-data-xs uppercase text-on-surface-variant;
+  }
+
+  .spec-value {
+    @apply block font-data text-data-lg text-on-surface;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .spec-value-xl {
+    @apply block font-data text-data-xl text-on-surface;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Tira de specs: divisores em hairline, empilha no mobile */
+  .spec-strip {
+    @apply flex flex-wrap items-stretch border border-hairline bg-slate/60;
+  }
+
+  .spec-strip > * {
+    @apply flex-1 border-hairline px-md py-sm;
+    min-width: 8rem;
+  }
+
+  .spec-strip > * + * {
+    @apply border-l;
+  }
+
+  /* ---- Botões ---------------------------------------------------------- */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm px-6 py-3
+           font-headline-md uppercase leading-none transition-colors;
+  }
+
+  .btn-primary {
+    @apply btn bg-secondary-container text-white hover:bg-[#0052d6] active:bg-[#0046b8];
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-secondary bg-transparent text-secondary
+           hover:bg-secondary hover:text-on-secondary;
+  }
+}
+
+@layer utilities {
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .bg-grid {
+    background-image: radial-gradient(theme("colors.outline-variant") 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

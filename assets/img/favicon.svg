@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="BODY FIT">
+  <rect width="32" height="32" fill="#0065f6"/>
+  <g fill="#ffffff">
+    <rect x="2" y="14" width="28" height="4"/>
+    <rect x="6" y="8" width="6" height="16"/>
+    <rect x="20" y="8" width="6" height="16"/>
+  </g>
+</svg>

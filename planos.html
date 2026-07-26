@@ -2,146 +2,267 @@
 <html class="dark" lang="pt-BR">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Planos e Loja - BODY FIT</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="assets/js/tw-config.js"></script>
-<style>
-  body { background-color: theme('colors.background'); color: theme('colors.on-background'); }
-  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-</style>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Planos e Loja — BODY FIT Vianópolis</title>
+<meta name="description" content="Plano mensal por R$ 150 ou pague 6 e treine 7 por R$ 130 ao mês. Todas as modalidades inclusas. Loja de suplementos na recepção."/>
+<meta name="theme-color" content="#131314"/>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"/>
+
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="pt_BR"/>
+<meta property="og:site_name" content="BODY FIT"/>
+<meta property="og:title" content="Planos e Loja — BODY FIT Vianópolis"/>
+<meta property="og:description" content="Pague 6, treine 7. Todas as modalidades inclusas na mesma mensalidade."/>
+<meta property="og:image" content="assets/img/prod-whey.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"/>
+<link rel="stylesheet" href="assets/css/app.css"/>
 </head>
-<body class="bg-background text-on-background antialiased min-h-screen flex flex-col font-body-md">
-<!-- TopNavBar -->
-<header class="sticky top-0 w-full z-50 bg-background border-b border-outline-variant">
-<div class="flex justify-between items-center px-margin-desktop max-md:px-margin-mobile py-4 max-w-7xl mx-auto w-full">
-<a class="font-headline-md text-headline-md text-on-surface tracking-tighter hover:text-secondary transition-colors" href="index.html">BODY FIT</a>
-<nav class="hidden md:flex gap-md">
-<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors duration-200" href="modalidades.html">TREINOS</a>
-<a class="text-secondary font-bold border-b-2 border-secondary pb-1 transition-colors duration-200" href="planos.html">PLANOS</a>
-<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors duration-200" href="unidades.html">UNIDADES</a>
-<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors duration-200" href="index.html#sobre">SOBRE</a>
-</nav>
-<a href="#planos" class="hidden md:block bg-secondary text-on-secondary px-6 py-2 rounded font-label-md uppercase tracking-wider transition-transform hover:bg-primary">SEJA ALUNO</a>
-<button class="md:hidden text-on-surface"><span class="material-symbols-outlined">menu</span></button>
-</div>
+<body class="flex min-h-screen flex-col selection:bg-secondary selection:text-on-secondary">
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ===== Navegação ===================================================== -->
+<header class="sticky top-0 z-50 w-full border-b border-outline-variant bg-background">
+  <nav class="mx-auto flex w-full max-w-7xl items-center justify-between px-margin-mobile py-4 md:px-margin-desktop" aria-label="Principal">
+    <a class="font-headline-md text-headline-md tracking-tighter text-on-surface transition-colors hover:text-secondary" href="index.html" translate="no">BODY&nbsp;FIT</a>
+
+    <div class="hidden items-center gap-lg md:flex">
+      <a class="font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:text-secondary" href="modalidades.html">Treinos</a>
+      <a class="border-b-2 border-secondary pb-1 font-label-md text-label-md uppercase text-secondary" href="planos.html" aria-current="page">Planos</a>
+      <a class="font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:text-secondary" href="unidades.html">Quadras</a>
+      <a class="font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:text-secondary" href="index.html#contato">Contato</a>
+    </div>
+
+    <div class="flex items-center gap-sm">
+      <a href="#planos" class="btn-primary hidden text-[18px] md:inline-flex">Seja aluno</a>
+      <button type="button" data-drawer-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu" class="p-2 text-on-surface md:hidden">
+        <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+      </button>
+    </div>
+  </nav>
 </header>
-<main class="flex-grow flex flex-col">
-<!-- Plans -->
-<section id="planos" class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-lowest relative overflow-hidden">
-<div class="absolute inset-0 bg-secondary-container/10"></div>
-<div class="max-w-7xl mx-auto relative z-10 flex flex-col items-center text-center">
-<h1 class="font-display-lg text-display-lg max-md:text-headline-lg-mobile text-on-surface mb-sm uppercase">SUA EVOLUÇÃO NÃO PRECISA CUSTAR CARO</h1>
-<p class="font-title-lg text-title-lg text-secondary mb-xl max-w-2xl">Não é sobre preço. É sobre compromisso com você mesmo.</p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-lg w-full max-w-4xl mx-auto">
-<!-- Pague 6, Treine 7 -->
-<div class="bg-primary-container border-2 border-secondary p-lg flex flex-col items-start text-left relative transform md:-translate-y-4">
-<div class="absolute -top-4 left-6 bg-secondary text-on-secondary font-label-md px-4 py-1 flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">trending_down</span> Escolha Inteligente
+
+<!-- Menu mobile -->
+<div id="menu-mobile" hidden class="fixed inset-0 z-[90] md:hidden">
+  <div data-drawer-overlay class="absolute inset-0 animate-fade-in bg-black/70"></div>
+  <div data-drawer-panel role="dialog" aria-modal="true" aria-label="Menu"
+       class="absolute right-0 top-0 flex h-full w-[min(20rem,85vw)] animate-drawer-in flex-col overflow-y-auto overscroll-contain border-l border-outline-variant bg-surface-container-lowest">
+    <div class="flex items-center justify-between border-b border-outline-variant px-margin-mobile py-4">
+      <span class="font-headline-md text-headline-md tracking-tighter text-on-surface" translate="no">BODY&nbsp;FIT</span>
+      <button type="button" data-drawer-close aria-label="Fechar menu" class="p-2 text-on-surface">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
+    </div>
+    <div class="flex flex-col px-margin-mobile py-md">
+      <a class="border-b border-hairline py-md font-headline-md text-headline-md uppercase text-on-surface transition-colors hover:text-secondary" href="modalidades.html">Treinos</a>
+      <a class="border-b border-hairline py-md font-headline-md text-headline-md uppercase text-secondary" href="planos.html" aria-current="page">Planos</a>
+      <a class="border-b border-hairline py-md font-headline-md text-headline-md uppercase text-on-surface transition-colors hover:text-secondary" href="unidades.html">Quadras</a>
+      <a class="border-b border-hairline py-md font-headline-md text-headline-md uppercase text-on-surface transition-colors hover:text-secondary" href="index.html#contato">Contato</a>
+    </div>
+    <div class="mt-auto p-margin-mobile">
+      <a href="#planos" class="btn-primary w-full text-[20px]">Ver planos</a>
+    </div>
+  </div>
 </div>
-<h2 class="font-headline-lg text-headline-lg text-on-primary-container mb-xs">PAGUE 6, TREINE 7</h2>
-<p class="font-body-md text-on-primary-container/80 mb-md">Por apenas:</p>
-<div class="flex items-end gap-2 mb-lg">
-<span class="font-title-lg text-on-primary-container">6x</span>
-<span class="font-display-lg text-display-lg text-on-primary-container">R$130,00</span>
-</div>
-<ul class="space-y-sm mb-xl text-on-primary-container font-body-md w-full">
-<li class="flex items-center gap-3 border-b border-on-primary-container/20 pb-2"><span class="material-symbols-outlined text-secondary">check_circle</span> Todos os dias</li>
-<li class="flex items-center gap-3 border-b border-on-primary-container/20 pb-2"><span class="material-symbols-outlined text-secondary">schedule</span> Horário livre</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">redeem</span> Sétimo mês grátis</li>
-</ul>
-<button class="w-full bg-secondary text-on-secondary font-headline-md text-xl py-4 hover:bg-secondary-fixed transition-colors mt-auto">ASSINAR AGORA</button>
-</div>
-<!-- Mensal -->
-<div class="bg-surface-container-high border border-outline-variant p-lg flex flex-col items-start text-left">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-xs">MENSAL</h2>
-<p class="font-body-md text-on-surface-variant mb-md">Por apenas:</p>
-<div class="flex items-end gap-2 mb-lg">
-<span class="font-display-lg text-display-lg text-on-surface">R$150,00</span>
-</div>
-<ul class="space-y-sm mb-xl text-on-surface-variant font-body-md w-full">
-<li class="flex items-center gap-3 border-b border-outline-variant pb-2"><span class="material-symbols-outlined">check</span> Todos os dias</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined">check</span> Horário livre</li>
-</ul>
-<button class="w-full bg-transparent border-2 border-primary text-primary font-headline-md text-xl py-4 hover:bg-primary/10 transition-colors mt-auto">ASSINAR MENSAL</button>
-</div>
-</div>
-</div>
+
+<main id="conteudo" class="flex flex-grow flex-col">
+
+<!-- ===== Planos ======================================================== -->
+<section id="planos" class="relative overflow-hidden bg-surface-container-lowest px-margin-mobile py-xl md:px-margin-desktop" aria-labelledby="tit-planos">
+  <div class="absolute inset-0 bg-secondary-container/10"></div>
+  <div class="relative z-10 mx-auto flex max-w-7xl flex-col items-center text-center">
+    <h1 id="tit-planos" class="mb-sm font-display-lg text-display-lg uppercase text-on-surface max-md:text-headline-lg-mobile">
+      Sua evolução não precisa custar caro
+    </h1>
+    <p class="mb-xl max-w-2xl font-title-lg text-title-lg text-secondary">
+      Todas as modalidades entram na mesma mensalidade. Sem taxa de matrícula.
+    </p>
+
+    <div class="mx-auto grid w-full max-w-4xl grid-cols-1 gap-lg text-left md:grid-cols-2">
+
+      <!-- Plano semestral -->
+      <div class="relative flex transform flex-col border-2 border-secondary bg-primary-container p-md pt-lg md:-translate-y-4 md:p-lg">
+        <p class="absolute -top-4 left-6 flex items-center gap-2 bg-secondary px-4 py-1 font-label-md text-label-md uppercase text-on-secondary">
+          <span class="material-symbols-outlined text-sm" aria-hidden="true">trending_down</span>
+          Escolha inteligente
+        </p>
+
+        <h2 class="mb-xs font-headline-lg text-headline-lg uppercase text-on-primary-container max-md:text-headline-md">Pague 6, treine 7</h2>
+        <p class="mb-md font-body-md text-body-md text-on-primary-container/80">Seis parcelas de</p>
+
+        <p class="mb-xs flex items-end gap-2">
+          <span class="font-data text-data-md text-on-primary-container">6&times;</span>
+          <span class="font-display-lg text-display-lg tnum leading-none text-on-primary-container max-md:text-headline-lg">R$&nbsp;130</span>
+        </p>
+        <p class="mb-lg font-data text-data-xs uppercase text-on-primary-container/80">
+          Total R$&nbsp;780 · sai a R$&nbsp;111,43 por mês
+        </p>
+
+        <ul class="mb-lg w-full space-y-sm font-body-md text-body-md text-on-primary-container">
+          <li class="flex items-center gap-3 border-b border-on-primary-container/20 pb-2"><span class="material-symbols-outlined shrink-0 text-secondary" aria-hidden="true">check_circle</span>Todas as modalidades</li>
+          <li class="flex items-center gap-3 border-b border-on-primary-container/20 pb-2"><span class="material-symbols-outlined shrink-0 text-secondary" aria-hidden="true">schedule</span>Horário livre</li>
+          <li class="flex items-center gap-3"><span class="material-symbols-outlined shrink-0 text-secondary" aria-hidden="true">redeem</span>Sétimo mês grátis</li>
+        </ul>
+
+        <a href="https://wa.me/5562999002616?text=Oi!%20Quero%20assinar%20o%20plano%20Pague%206%2C%20Treine%207%20da%20BODY%20FIT."
+           target="_blank" rel="noopener noreferrer"
+           class="btn mt-auto w-full bg-secondary text-xl text-on-secondary hover:bg-secondary-fixed">
+          Assinar semestral
+        </a>
+      </div>
+
+      <!-- Plano mensal -->
+      <div class="flex flex-col border border-outline-variant bg-surface-container-high p-md md:p-lg">
+        <h2 class="mb-xs font-headline-lg text-headline-lg uppercase text-on-surface max-md:text-headline-md">Mensal</h2>
+        <p class="mb-md font-body-md text-body-md text-on-surface-variant">Por apenas</p>
+
+        <p class="mb-xs">
+          <span class="font-display-lg text-display-lg tnum leading-none text-on-surface max-md:text-headline-lg">R$&nbsp;150</span>
+        </p>
+        <p class="mb-lg font-data text-data-xs uppercase text-on-surface-variant">
+          Sem fidelidade · cancele quando quiser
+        </p>
+
+        <ul class="mb-lg w-full space-y-sm font-body-md text-body-md text-on-surface-variant">
+          <li class="flex items-center gap-3 border-b border-outline-variant pb-2"><span class="material-symbols-outlined shrink-0" aria-hidden="true">check</span>Todas as modalidades</li>
+          <li class="flex items-center gap-3"><span class="material-symbols-outlined shrink-0" aria-hidden="true">check</span>Horário livre</li>
+        </ul>
+
+        <a href="https://wa.me/5562999002616?text=Oi!%20Quero%20assinar%20o%20plano%20mensal%20da%20BODY%20FIT."
+           target="_blank" rel="noopener noreferrer"
+           class="btn-outline mt-auto w-full text-xl">
+          Assinar mensal
+        </a>
+      </div>
+    </div>
+
+    <p class="mt-lg font-body-md text-body-md text-on-surface-variant">
+      Ainda em dúvida?
+      <a class="text-secondary underline underline-offset-4 transition-colors hover:text-primary" href="index.html#contato">Agende uma aula experimental gratuita</a>.
+    </p>
+  </div>
 </section>
-<!-- Store -->
-<section id="loja" class="py-xl px-margin-mobile md:px-margin-desktop bg-background border-t border-surface-variant">
-<div class="max-w-7xl mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end mb-lg">
-<div>
-<h2 class="font-display-lg text-display-lg max-md:text-headline-lg-mobile text-on-surface">LOJA BODYFIT</h2>
-<p class="font-body-lg text-on-surface-variant mt-2">Suplementação premium para resultados reais.</p>
-</div>
-<button class="mt-4 md:mt-0 text-secondary font-label-md uppercase hover:text-primary transition-colors flex items-center gap-2">Ver todos os produtos <span class="material-symbols-outlined">arrow_forward</span></button>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
-<!-- Product 1 -->
-<div class="group bg-surface-container border border-outline-variant overflow-hidden hover:border-secondary transition-colors">
-<div class="aspect-square bg-surface-container-lowest p-6 flex items-center justify-center relative">
-<div class="absolute top-4 left-4 bg-primary text-on-primary text-xs font-bold px-2 py-1 z-10">MAIS VENDIDO</div>
-<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" alt="Dux Whey Concentrado" src="assets/img/prod-whey.png"/>
-</div>
-<div class="p-6">
-<h3 class="font-title-lg text-on-surface mb-1 uppercase">Dux Whey Concentrado</h3>
-<p class="font-body-md text-on-surface-variant mb-4">900g - Morango</p>
-<div class="flex justify-between items-center mt-4">
-<span class="font-headline-md text-on-surface">R$ 159,90</span>
-<button class="bg-secondary text-on-secondary p-3 rounded-full hover:bg-primary transition-colors"><span class="material-symbols-outlined">shopping_cart</span></button>
-</div>
-</div>
-</div>
-<!-- Product 2 -->
-<div class="group bg-surface-container border border-outline-variant overflow-hidden hover:border-secondary transition-colors">
-<div class="aspect-square bg-surface-container-lowest p-6 flex items-center justify-center">
-<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" alt="Dux Creatina" src="assets/img/prod-creatina.png"/>
-</div>
-<div class="p-6">
-<h3 class="font-title-lg text-on-surface mb-1 uppercase">Dux Creatina</h3>
-<p class="font-body-md text-on-surface-variant mb-4">300g - 100% Pura</p>
-<div class="flex justify-between items-center mt-4">
-<span class="font-headline-md text-on-surface">R$ 99,90</span>
-<button class="bg-secondary text-on-secondary p-3 rounded-full hover:bg-primary transition-colors"><span class="material-symbols-outlined">shopping_cart</span></button>
-</div>
-</div>
-</div>
-<!-- Product 3 -->
-<div class="group bg-surface-container border border-outline-variant overflow-hidden hover:border-secondary transition-colors">
-<div class="aspect-square bg-surface-container-lowest p-6 flex items-center justify-center">
-<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" alt="Dux Fish Oil" src="assets/img/prod-fishoil.png"/>
-</div>
-<div class="p-6">
-<h3 class="font-title-lg text-on-surface mb-1 uppercase">Dux Fish Oil</h3>
-<p class="font-body-md text-on-surface-variant mb-4">Omega 3 - 60 Cápsulas</p>
-<div class="flex justify-between items-center mt-4">
-<span class="font-headline-md text-on-surface">R$ 89,90</span>
-<button class="bg-secondary text-on-secondary p-3 rounded-full hover:bg-primary transition-colors"><span class="material-symbols-outlined">shopping_cart</span></button>
-</div>
-</div>
-</div>
-</div>
-</div>
+
+<!-- ===== Loja ========================================================== -->
+<section id="loja" class="border-t border-surface-variant px-margin-mobile py-xl md:px-margin-desktop" aria-labelledby="tit-loja">
+  <div class="mx-auto max-w-7xl">
+    <div class="mb-lg flex flex-col gap-sm md:flex-row md:items-end md:justify-between">
+      <div>
+        <h2 id="tit-loja" class="font-display-lg text-display-lg uppercase text-on-surface max-md:text-headline-lg-mobile">Loja BODY FIT</h2>
+        <p class="mt-2 font-body-lg text-body-lg text-on-surface-variant">
+          Suplementação vendida na recepção. Peça pelo WhatsApp e retire no treino.
+        </p>
+      </div>
+    </div>
+
+    <ul class="grid grid-cols-1 gap-gutter sm:grid-cols-2 lg:grid-cols-3">
+
+      <li class="group flex flex-col overflow-hidden border border-outline-variant bg-surface-container transition-colors hover:border-secondary">
+        <div class="relative flex aspect-square items-center justify-center bg-surface-container-lowest p-6">
+          <p class="absolute left-4 top-4 z-10 bg-primary-container px-2 py-1 font-data text-[10px] uppercase tracking-wider text-white">Mais vendido</p>
+          <img src="assets/img/prod-whey.webp" alt="Pote de Dux Whey Concentrado sabor morango, 900 g"
+               width="512" height="512" loading="lazy" decoding="async"
+               class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"/>
+        </div>
+        <div class="flex flex-grow flex-col p-6">
+          <h3 class="mb-1 font-title-lg text-title-lg uppercase text-on-surface">Dux Whey Concentrado</h3>
+          <p class="mb-4 font-body-md text-body-md text-on-surface-variant">900&nbsp;g · Morango</p>
+          <div class="mt-auto flex items-center justify-between gap-sm">
+            <span class="font-data text-data-lg tnum text-on-surface">R$&nbsp;159,90</span>
+            <a href="https://wa.me/5562999002616?text=Oi!%20Quero%20comprar%20o%20Dux%20Whey%20Concentrado%20900g%20de%20Morango."
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Comprar Dux Whey Concentrado pelo WhatsApp"
+               class="inline-flex items-center gap-2 rounded-sm bg-secondary-container px-4 py-2 font-label-md text-label-md uppercase text-white transition-colors hover:bg-[#0052d6]">
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">shopping_cart</span>
+              Comprar
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="group flex flex-col overflow-hidden border border-outline-variant bg-surface-container transition-colors hover:border-secondary">
+        <div class="flex aspect-square items-center justify-center bg-surface-container-lowest p-6">
+          <img src="assets/img/prod-creatina.webp" alt="Pote de Dux Creatina 100% pura, 300 g"
+               width="512" height="512" loading="lazy" decoding="async"
+               class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"/>
+        </div>
+        <div class="flex flex-grow flex-col p-6">
+          <h3 class="mb-1 font-title-lg text-title-lg uppercase text-on-surface">Dux Creatina</h3>
+          <p class="mb-4 font-body-md text-body-md text-on-surface-variant">300&nbsp;g · 100% pura</p>
+          <div class="mt-auto flex items-center justify-between gap-sm">
+            <span class="font-data text-data-lg tnum text-on-surface">R$&nbsp;99,90</span>
+            <a href="https://wa.me/5562999002616?text=Oi!%20Quero%20comprar%20a%20Dux%20Creatina%20300g."
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Comprar Dux Creatina pelo WhatsApp"
+               class="inline-flex items-center gap-2 rounded-sm bg-secondary-container px-4 py-2 font-label-md text-label-md uppercase text-white transition-colors hover:bg-[#0052d6]">
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">shopping_cart</span>
+              Comprar
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="group flex flex-col overflow-hidden border border-outline-variant bg-surface-container transition-colors hover:border-secondary">
+        <div class="flex aspect-square items-center justify-center bg-surface-container-lowest p-6">
+          <img src="assets/img/prod-fishoil.webp" alt="Frasco de Dux Fish Oil ômega 3, 60 cápsulas"
+               width="512" height="512" loading="lazy" decoding="async"
+               class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"/>
+        </div>
+        <div class="flex flex-grow flex-col p-6">
+          <h3 class="mb-1 font-title-lg text-title-lg uppercase text-on-surface">Dux Fish Oil</h3>
+          <p class="mb-4 font-body-md text-body-md text-on-surface-variant">Ômega 3 · 60 cápsulas</p>
+          <div class="mt-auto flex items-center justify-between gap-sm">
+            <span class="font-data text-data-lg tnum text-on-surface">R$&nbsp;89,90</span>
+            <a href="https://wa.me/5562999002616?text=Oi!%20Quero%20comprar%20o%20Dux%20Fish%20Oil%2060%20c%C3%A1psulas."
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Comprar Dux Fish Oil pelo WhatsApp"
+               class="inline-flex items-center gap-2 rounded-sm bg-secondary-container px-4 py-2 font-label-md text-label-md uppercase text-white transition-colors hover:bg-[#0052d6]">
+              <span class="material-symbols-outlined text-[18px]" aria-hidden="true">shopping_cart</span>
+              Comprar
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>
+
 </main>
-<!-- Footer -->
-<footer class="bg-surface-container-lowest border-t border-outline-variant w-full py-lg">
-<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop max-md:px-margin-mobile gap-md max-w-7xl mx-auto w-full">
-<div class="font-headline-md text-headline-md text-on-surface">BODY FIT</div>
-<div class="flex flex-wrap justify-center gap-md font-label-md text-label-md text-on-surface-variant">
-<a class="hover:text-on-surface transition-colors opacity-80 hover:opacity-100" href="#">PRIVACY POLICY</a>
-<a class="hover:text-on-surface transition-colors opacity-80 hover:opacity-100" href="#">TERMS OF SERVICE</a>
-<a class="hover:text-on-surface transition-colors opacity-80 hover:opacity-100" href="#">CONTACT US</a>
-<a class="hover:text-on-surface transition-colors opacity-80 hover:opacity-100" href="#">CAREERS</a>
-</div>
-<div class="font-body-md text-body-md text-secondary opacity-80">© 2024 BODY FIT. TODOS OS DIREITOS RESERVADOS.</div>
-</div>
+
+<!-- ===== Rodapé ======================================================== -->
+<footer class="mt-auto border-t border-outline-variant bg-surface-container-lowest py-lg">
+  <div class="mx-auto w-full max-w-7xl px-margin-mobile md:px-margin-desktop">
+    <div class="flex flex-col gap-lg md:flex-row md:justify-between">
+      <div>
+        <p class="font-headline-md text-headline-md text-on-surface" translate="no">BODY&nbsp;FIT</p>
+        <p class="mt-xs max-w-xs font-body-md text-body-md text-on-surface-variant">Clube esportivo em Vianópolis desde 2004.</p>
+      </div>
+      <nav class="flex flex-wrap gap-x-lg gap-y-sm" aria-label="Rodapé">
+        <a class="font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:text-on-surface" href="modalidades.html">Treinos</a>
+        <a class="font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:text-on-surface" href="planos.html">Planos</a>
+        <a class="font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:text-on-surface" href="unidades.html">Quadras</a>
+        <a class="font-label-md text-label-md uppercase text-on-surface-variant transition-colors hover:text-on-surface" href="index.html#contato">Contato</a>
+      </nav>
+    </div>
+    <div class="mt-lg flex flex-col gap-sm border-t border-hairline pt-md md:flex-row md:items-center md:justify-between">
+      <p class="font-data text-data-xs uppercase text-on-surface-variant">© <span data-ano>2026</span> BODY FIT · Todos os direitos reservados</p>
+      <p class="font-data text-data-xs uppercase text-on-surface-variant">Seg a Sex 05:30–22:00 · Sáb 08:00–14:00</p>
+    </div>
+  </div>
 </footer>
+
+<a href="https://wa.me/5562999002616?text=Oi!%20Tenho%20uma%20d%C3%BAvida%20sobre%20os%20planos%20da%20BODY%20FIT."
+   target="_blank" rel="noopener noreferrer" aria-label="Falar com a BODY FIT no WhatsApp"
+   class="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full border border-secondary bg-secondary-container text-white transition-colors hover:bg-[#0052d6]"
+   style="bottom: max(1.5rem, env(safe-area-inset-bottom)); right: max(1.5rem, env(safe-area-inset-right))">
+  <span class="material-symbols-outlined text-[28px]" aria-hidden="true" style="font-variation-settings:'FILL' 1">chat</span>
+</a>
+
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>
