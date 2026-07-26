@@ -1,0 +1,5 @@
+{
+  "installCommand": "echo Skipping install: static site, no build needed",
+  "buildCommand": "echo Skipping build: assets/css/app.css is pre-built and committed",
+  "outputDirectory": "."
+}
