@@ -1780,6 +1780,10 @@ p {
   text-decoration-line: underline;
 }
 
+.line-through {
+  text-decoration-line: line-through;
+}
+
 .underline-offset-4 {
   text-underline-offset: 4px;
 }
@@ -2117,6 +2121,10 @@ p {
 
   .md\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .md\:pl-lg {
+    padding-left: 48px;
   }
 }
 
