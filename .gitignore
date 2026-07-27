@@ -1,3 +1,8 @@
 node_modules/
 .DS_Store
 *.log
+
+# artefatos de captura para o vídeo de apresentação
+cap/
+.playwright-mcp/
+*.mp4
