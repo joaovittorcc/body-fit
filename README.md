@@ -76,6 +76,25 @@ Estão aplicados nos links `wa.me`, `tel:`, no endereço da home e no JSON-LD do
 | Quadras, refletores, avaliação física | `02`, `1200 W`, `Inclusa` | `unidades.html` |
 | Preços | `R$ 130` / `R$ 150` e os suplementos | `planos.html` |
 
+## 🚧 Modo demonstração
+
+O site está marcado como demo em três camadas. **Tudo isso precisa sair na versão final:**
+
+| O que | Onde |
+| --- | --- |
+| Faixa clara no topo | `.demo-banner` — nas 5 páginas, logo antes da `<nav>` |
+| Notas em blocos de dado não confirmado | `.demo-nota` — horários, preços dos planos, catálogo da loja, imagem da quadra |
+| Bloqueio de indexação | `<meta name="robots" content="noindex, nofollow">` no `<head>` das 5 páginas |
+| Estilos dos avisos | `.demo-banner` e `.demo-nota` em `assets/css/src.css` |
+
+Para achar tudo de uma vez:
+
+```bash
+grep -rn "demo-banner\|demo-nota\|noindex" *.html assets/css/src.css
+```
+
+> O `noindex` é proposital: enquanto os preços e horários forem exemplos, é melhor que o Google não os indexe e passe a mostrar informação errada sobre o negócio. Remova só quando os dados forem reais.
+
 ### Ao publicar
 
 1. Preencher `url` e `image` no JSON-LD do `index.html` com o domínio final e descomentar `openingHoursSpecification`.

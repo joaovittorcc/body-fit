@@ -5,6 +5,8 @@
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
 <title>Planos e Loja — BODY FIT Vianópolis</title>
 <meta name="description" content="Plano mensal por R$ 150 ou pague 6 e treine 7 por R$ 130 ao mês. Todas as modalidades inclusas. Loja de suplementos na recepção."/>
+<meta name="robots" content="noindex, nofollow"/>
+<!-- ^ demonstração: impede que o Google indexe preços e horários de exemplo. Remover ao publicar. -->
 <meta name="theme-color" content="#131314"/>
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"/>
 
@@ -27,8 +29,18 @@
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
 <!-- ===== Navegação ===================================================== -->
-<header class="sticky top-0 z-50 w-full border-b border-outline-variant bg-background">
-  <nav class="mx-auto flex w-full max-w-7xl items-center justify-between px-margin-mobile py-4 md:px-margin-desktop" aria-label="Principal">
+<header class="sticky top-0 z-50 w-full bg-background">
+<!-- ===== AVISO DE DEMONSTRAÇÃO — REMOVER AO PUBLICAR =====================
+     Junto com esta faixa, remover também:
+       - <meta name="robots" content="noindex, nofollow"/> no <head>
+       - os blocos .demo-nota espalhados pelas páginas
+       - as regras .demo-banner e .demo-nota em assets/css/src.css        -->
+<div class="demo-banner" role="note">
+  <span class="material-symbols-outlined text-[16px]" aria-hidden="true">construction</span>
+  <span>Site de demonstração &middot; textos, preços, horários e imagens são exemplos e ainda podem mudar</span>
+</div>
+
+  <nav class="mx-auto flex w-full max-w-7xl items-center justify-between border-b border-outline-variant px-margin-mobile py-4 md:px-margin-desktop" aria-label="Principal">
     <a class="font-headline-md text-headline-md tracking-tighter text-on-surface transition-colors hover:text-secondary" href="index.html" translate="no">BODY&nbsp;FIT</a>
 
     <div class="hidden items-center gap-lg md:flex">
@@ -141,7 +153,12 @@
       </div>
     </div>
 
-    <p class="mt-lg font-body-md text-body-md text-on-surface-variant">
+    <p class="demo-nota mt-lg justify-center text-center" role="note">
+      <span class="material-symbols-outlined text-[14px]" aria-hidden="true">info</span>
+      Valores de exemplo — os preços reais dos planos ainda serão confirmados
+    </p>
+
+    <p class="mt-md font-body-md text-body-md text-on-surface-variant">
       Ainda em dúvida?
       <a class="text-secondary underline underline-offset-4 transition-colors hover:text-primary" href="index.html#contato">Agende uma aula experimental gratuita</a>.
     </p>
@@ -156,6 +173,10 @@
         <h2 id="tit-loja" class="font-display-lg text-display-lg uppercase text-on-surface max-md:text-headline-lg-mobile">Loja BODY FIT</h2>
         <p class="mt-2 font-body-lg text-body-lg text-on-surface-variant">
           Suplementação vendida na recepção. Peça pelo WhatsApp e retire no treino.
+        </p>
+        <p class="demo-nota" role="note">
+          <span class="material-symbols-outlined text-[14px]" aria-hidden="true">info</span>
+          Produtos e preços de exemplo — catálogo real a definir
         </p>
       </div>
     </div>

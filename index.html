@@ -5,6 +5,8 @@
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
 <title>BODY FIT — Clube esportivo em Vianópolis desde 2004</title>
 <meta name="description" content="Musculação, cross training, artes marciais, fit dance e yoga em Vianópolis por uma única mensalidade. Quadra de areia com reserva por hora. Agende sua aula experimental."/>
+<meta name="robots" content="noindex, nofollow"/>
+<!-- ^ demonstração: impede que o Google indexe preços e horários de exemplo. Remover ao publicar. -->
 <meta name="theme-color" content="#131314"/>
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"/>
 
@@ -72,7 +74,17 @@
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
 <!-- ===== Navegação ===================================================== -->
-<nav class="sticky top-0 z-50 w-full border-b border-outline-variant bg-background" aria-label="Principal">
+<div class="sticky top-0 z-50">
+<!-- ===== AVISO DE DEMONSTRAÇÃO — REMOVER AO PUBLICAR =====================
+     Junto com esta faixa, remover também:
+       - <meta name="robots" content="noindex, nofollow"/> no <head>
+       - os blocos .demo-nota espalhados pelas páginas
+       - as regras .demo-banner e .demo-nota em assets/css/src.css        -->
+<div class="demo-banner" role="note">
+  <span class="material-symbols-outlined text-[16px]" aria-hidden="true">construction</span>
+  <span>Site de demonstração &middot; textos, preços, horários e imagens são exemplos e ainda podem mudar</span>
+</div>
+<nav class="w-full border-b border-outline-variant bg-background" aria-label="Principal">
   <div class="mx-auto flex w-full max-w-7xl items-center justify-between px-margin-mobile py-4 md:px-margin-desktop">
     <a class="font-headline-md text-headline-md tracking-tighter text-on-surface transition-colors hover:text-secondary" href="index.html" translate="no">BODY&nbsp;FIT</a>
 
@@ -94,6 +106,7 @@
     </div>
   </div>
 </nav>
+</div>
 
 <!-- Menu mobile -->
 <div id="menu-mobile" hidden class="fixed inset-0 z-[90] md:hidden">
@@ -282,6 +295,10 @@
             <dd class="font-data text-data-md tnum text-on-surface-variant">Fechado</dd>
           </div>
         </dl>
+        <p class="demo-nota" role="note">
+          <span class="material-symbols-outlined text-[14px]" aria-hidden="true">info</span>
+          Horário de exemplo — a confirmar
+        </p>
       </div>
 
       <!-- Onde fica -->

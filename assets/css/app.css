@@ -701,29 +701,61 @@ p {
 
 /* Tira de specs: divisores em hairline, empilha no mobile */
 
-.spec-strip {
+/* ---- Avisos de demonstração ------------------------------------------
+     Usam os tokens invertidos da paleta de propósito: a faixa clara sobre
+     o site escuro lê como camada de sistema, não como conteúdo da marca.
+     REMOVER tudo isto ao publicar a versão final. */
+
+.demo-banner {
   display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(45 45 51 / var(--tw-border-opacity, 1));
-  background-color: rgb(26 26 30 / 0.6);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 226 227 / var(--tw-bg-opacity, 1));
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-family: IBM Plex Mono, ui-monospace, monospace;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(49 48 49 / var(--tw-text-opacity, 1));
 }
 
-.spec-strip > * {
-  flex: 1 1 0%;
-  --tw-border-opacity: 1;
-  border-color: rgb(45 45 51 / var(--tw-border-opacity, 1));
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  min-width: 8rem;
+@media (min-width: 768px) {
+  .demo-banner {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 }
 
-.spec-strip > * + * {
-  border-left-width: 1px;
+.demo-nota {
+  margin-top: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  border-left-width: 2px;
+  border-color: rgb(229 226 227 / 0.5);
+  background-color: rgb(229 226 227 / 0.06);
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-family: IBM Plex Mono, ui-monospace, monospace;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(196 197 214 / var(--tw-text-opacity, 1));
 }
 
 /* ---- Botões ---------------------------------------------------------- */
@@ -807,10 +839,6 @@ p {
   background-color: rgb(178 197 255 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(0 43 115 / var(--tw-text-opacity, 1));
-}
-
-.pointer-events-none {
-  pointer-events: none;
 }
 
 .fixed {
@@ -1001,10 +1029,6 @@ p {
   height: 0.25rem;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .h-14 {
   height: 3.5rem;
 }
@@ -1027,10 +1051,6 @@ p {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .w-14 {
@@ -1193,10 +1213,6 @@ p {
   gap: 12px;
 }
 
-.gap-xl {
-  gap: 80px;
-}
-
 .gap-xs {
   gap: 4px;
 }
@@ -1297,10 +1313,6 @@ p {
   border-color: rgb(172 188 255 / 0.2);
 }
 
-.border-on-secondary\/40 {
-  border-color: rgb(0 43 115 / 0.4);
-}
-
 .border-outline-variant {
   --tw-border-opacity: 1;
   border-color: rgb(67 70 84 / var(--tw-border-opacity, 1));
@@ -1333,10 +1345,6 @@ p {
   background-color: rgb(0 0 0 / 0.7);
 }
 
-.bg-on-secondary\/10 {
-  background-color: rgb(0 43 115 / 0.1);
-}
-
 .bg-primary-container {
   --tw-bg-opacity: 1;
   background-color: rgb(0 64 193 / var(--tw-bg-opacity, 1));
@@ -1354,10 +1362,6 @@ p {
 
 .bg-secondary-container\/10 {
   background-color: rgb(0 101 246 / 0.1);
-}
-
-.bg-secondary\/10 {
-  background-color: rgb(178 197 255 / 0.1);
 }
 
 .bg-slate {
@@ -1734,10 +1738,6 @@ p {
   letter-spacing: 0.05em;
 }
 
-.tracking-widest {
-  letter-spacing: 0.1em;
-}
-
 .text-on-primary-container {
   --tw-text-opacity: 1;
   color: rgb(172 188 255 / var(--tw-text-opacity, 1));
@@ -1843,10 +1843,6 @@ p {
 
 .duration-500 {
   transition-duration: 500ms;
-}
-
-.duration-700 {
-  transition-duration: 700ms;
 }
 
 .tnum {
@@ -1961,16 +1957,6 @@ p {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.group:hover .group-hover\:bg-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(178 197 255 / var(--tw-bg-opacity, 1));
-}
-
-.group:hover .group-hover\:text-on-secondary {
-  --tw-text-opacity: 1;
-  color: rgb(0 43 115 / var(--tw-text-opacity, 1));
-}
-
 .group:hover .group-hover\:text-secondary {
   --tw-text-opacity: 1;
   color: rgb(178 197 255 / var(--tw-text-opacity, 1));
@@ -2049,16 +2035,8 @@ p {
     display: none;
   }
 
-  .md\:aspect-\[4\/3\] {
-    aspect-ratio: 4/3;
-  }
-
   .md\:h-\[500px\] {
     height: 500px;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
   }
 
   .md\:w-64 {

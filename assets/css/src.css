@@ -98,6 +98,22 @@
     @apply border-l;
   }
 
+  /* ---- Avisos de demonstração ------------------------------------------
+     Usam os tokens invertidos da paleta de propósito: a faixa clara sobre
+     o site escuro lê como camada de sistema, não como conteúdo da marca.
+     REMOVER tudo isto ao publicar a versão final. */
+  .demo-banner {
+    @apply flex w-full items-center justify-center gap-2 bg-inverse-surface
+           px-margin-mobile py-2 text-center font-data text-data-xs
+           uppercase text-inverse-on-surface md:px-margin-desktop;
+  }
+
+  .demo-nota {
+    @apply mt-sm flex items-start gap-2 border-l-2 border-inverse-surface/50
+           bg-inverse-surface/[0.06] px-sm py-xs font-data text-data-xs
+           uppercase text-on-surface-variant;
+  }
+
   /* ---- Botões ---------------------------------------------------------- */
   .btn {
     @apply inline-flex items-center justify-center gap-2 rounded-sm px-6 py-3
